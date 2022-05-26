@@ -24,7 +24,11 @@
 - SRAM
 - PBL
 - SBL
+- Os kernel
+- RFS
 - Makefile
+- ELF
+
 
 ### Assignment 2
 - Creating File
