@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/sonal/Desktop/EOS_sonal/EOS'
+make: Leaving directory '/home/sonal/Desktop/EOS_sonal/EOS'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
