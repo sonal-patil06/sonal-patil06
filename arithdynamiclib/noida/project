@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include"arith";
+int main()
+{
+    int output;
+    output = add(1000,30);
+    printf("output:%d\n",output);
+    return 0;
+
+}
