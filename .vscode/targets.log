@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 31 22:36:07 2022
+# Make data base, printed on Wed Jun  1 20:29:44 2022
 
 # Variables
 
@@ -45,7 +45,7 @@ VTE_VERSION = 5202
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
-_ = /usr/bin/code
+JOURNAL_STREAM = 9:27486
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -59,15 +59,19 @@ USERNAME = sonal
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=d6aab464e44645ef464f176c62977eb8
 # environment
 VSCODE_VERBOSE_LOGGING = true
+# environment
+_ = /usr/bin/code
+# environment
+MANAGERPID = 1100
 # environment
 CLUTTER_IM_MODULE = xim
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/sonal/Desktop/EOS_sonal/EOS/libsycall
+VSCODE_CWD = /home/sonal/Desktop/EOS_sonal/EOS
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -75,7 +79,7 @@ PATH = /home/sonal/Downloads/extract/rpi/gcc-arm-10.3-2021.07-x86_64-aarch64-non
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/sonal-VirtualBox:@/tmp/.ICE-unix/1241,unix/sonal-VirtualBox:/tmp/.ICE-unix/1241
+SESSION_MANAGER = local/sonal-VirtualBox:@/tmp/.ICE-unix/1127,unix/sonal-VirtualBox:/tmp/.ICE-unix/1127
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -86,6 +90,8 @@ XDG_MENU_PREFIX = gnome-
 VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = e030ea0d4d5c4442b460131452760522
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -107,7 +113,7 @@ PWD = /home/sonal/Desktop/EOS_sonal/EOS
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 1336
+SSH_AGENT_PID = 1222
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -153,7 +159,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ce3a1a8b-c731-4921-a968-56f6205b36a8.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f59c5987-5cdd-48d2-be0d-23e425bda3eb.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -166,8 +172,6 @@ XDG_CURRENT_DESKTOP = Unity
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := make
-# environment
-OLDPWD = /home/sonal/Desktop/EOS_sonal/EOS
 # default
 .VARIABLES := 
 # automatic
@@ -189,8 +193,6 @@ GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
-NO_AT_BRIDGE = 1
-# environment
 QT_ACCESSIBILITY = 1
 # environment
 TEXTDOMAINDIR = /usr/share/locale/
@@ -201,15 +203,15 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # environment
+DBUS_STARTER_BUS_TYPE = session
+# environment
 QT4_IM_MODULE = xim
 # environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
-# environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/a3dd9159_d8e9_430c_a1b0_323e6b34f37e
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/6830e874_05ee_4006_bab4_b8d78c55663d
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.61
+GNOME_TERMINAL_SERVICE = :1.59
 # default
 SUFFIXES := 
 # environment
@@ -218,8 +220,6 @@ CHROME_DESKTOP = code-url-handler.desktop
 WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# environment
-GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # environment
@@ -227,9 +227,11 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 3959
+VSCODE_PID = 1589
+# environment
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=d6aab464e44645ef464f176c62977eb8
 # variable set hash-table stats:
-# Load=108/1024=11%, Rehash=0, Collisions=15/130=12%
+# Load=109/1024=11%, Rehash=0, Collisions=16/131=12%
 
 # Pattern-specific Variable Values
 
@@ -237,9 +239,9 @@ VSCODE_PID = 3959
 
 # Directories
 
-# . (device 2049, inode 1442017): 9 files, no impossibilities.
+# . (device 2049, inode 1442017): 10 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -276,9 +278,9 @@ makefile:
 
 # Not a target:
 GNUmakefile:
+ 
 #  Implicit rule search has been done.
 #  File does not exist.
- 
 #  File has been updated.
 #  Failed to be updated.
 
@@ -290,12 +292,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 142 B / avg = 8 B
-# current buf: size = 8162 B / used = 142 B / count = 17 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 157 B / avg = 8 B
+# current buf: size = 8162 B / used = 157 B / count = 18 / avg = 8 B
 
-# strcache performance: lookups = 20 / hit rate = 15%
+# strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
-# Finished Make data base on Tue May 31 22:36:07 2022
+# Load=18/8192=0%, Rehash=0, Collisions=1/21=5%
+# Finished Make data base on Wed Jun  1 20:29:44 2022
 
  

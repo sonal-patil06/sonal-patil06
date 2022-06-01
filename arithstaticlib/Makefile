@@ -1,13 +1,12 @@
 cc = aarch64-none-linux-gnu-gcc
 
-libarith.a : add.o sub.o main.o
+libarith.a: add.o sub.o
 	ar crv libarith.a add.o sub.o
 
 arithprog : add.o main.o sub.o
 	$(cc) -o arithprog add.o main.o sub.o
 
-
-add.o : add.c 
+add.o : add.c
 	$(cc) -c -o add.o add.c
 
 sub.o : sub.c

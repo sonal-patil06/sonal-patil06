@@ -37,3 +37,7 @@
 - close the file 
 - Explore
 - Returns values for read and write system calls
+
+## Day3
+- Makefile
+- 
