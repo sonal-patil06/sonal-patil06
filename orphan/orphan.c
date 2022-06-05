@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <unistd.h>
 
 int main (int argc , char const *argv[])
 {
@@ -11,10 +12,13 @@ int main (int argc , char const *argv[])
     if ( 0 == id)
     {
         printf("Child process ID:%d PPID:%d",getpid(),getppid());
+        sleep(10);
+        printf("child completed");
     }
     else if (0 < id )
     {
         printf("Parent process ID:%d PPID:%d",getpid(),getppid());
+        printf("Parent completed");
     }
     else
     {

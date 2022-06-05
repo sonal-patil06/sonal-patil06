@@ -1,26 +1,26 @@
 #include<stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <unistd.h>
 
-int main(int argc,char const*argv[])
+int main (int argc , char const *argv[])
 {
     pid_t id;
+    printf("before fork\n");
 
-    printf("Before fork\n"); 
-
-    id = fork();
-
-    if(0==id)
+    id = fork(); 
+    if ( 0 == id)
     {
-        printf("Child Process id :%d PPID: %d\n",getpid(),getppid()); 
+        printf("Child process ID:%d PPID:%d",getpid(),getppid());
+        printf("child completed");
     }
-    else if(0 < id)
+    else if (0 < id )
     {
-        printf("Parent Process id :%d PPID: %d\n",getpid(),getppid());
+        printf("Parent process ID:%d PPID:%d",getpid(),getppid());
         sleep(10);
-        printf("Parent process completed"); 
+        printf("Parent completed");
     }
-    else 
+    else
     {
         perror("Fork failed\n");
     }
